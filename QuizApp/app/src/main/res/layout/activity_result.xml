@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResultActivity"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/result_title"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="40dp">
+
+    <!--ここに星の画像を置いていく-->
+
+        <ImageView
+            android:id="@+id/starImage1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/star_gray"
+            android:contentDescription="@string/img_desc_star" />
+
+        <ImageView
+            android:id="@+id/starImage2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/star_gray"
+            android:contentDescription="@string/img_desc_star" />
+
+        <ImageView
+            android:id="@+id/starImage3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/star_gray"
+            android:contentDescription="@string/img_desc_star" />
+
+
+        <ImageView
+            android:id="@+id/starImage4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/star_gray"
+            android:contentDescription="@string/img_desc_star" />
+
+
+        <ImageView
+            android:id="@+id/starImage5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/star_gray"
+            android:contentDescription="@string/img_desc_star" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/scoreLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/result_score"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/resultMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/message_5"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:id="@+id/tryAgainBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_try_again"
+        android:layout_marginTop="60dp" />
+
+</LinearLayout>

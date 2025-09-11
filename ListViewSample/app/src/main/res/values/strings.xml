@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">リスト選択サンプル</string>
+    <string-array name="lv_menu">
+        <item>からあげ定食a</item>
+        <item>からあげ定食b</item>
+        <item>からあげ定食c</item>
+        <item>からあげ定食d</item>
+        <item>からあげ定食e</item>
+        <item>からあげ定食f</item>
+        <item>からあげ定食g</item>
+        <item>からあげ定食h</item>
+        <item>からあげ定食i</item>
+        <item>からあげ定食j</item>
+        <item>からあげ定食aa</item>
+        <item>からあげ定食bb</item>
+        <item>からあげ定食cc</item>
+        <item>からあげ定食dd</item>
+        <item>からあげ定食ee</item>
+        <item>からあげ定食ff</item>
+        <item>からあげ定食gg</item>
+        <item>からあげ定食hh</item>
+        <item>からあげ定食ii</item>
+        <item>からあげ定食jj</item>
+    </string-array>
+</resources>

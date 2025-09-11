@@ -1,0 +1,10 @@
+<resources>
+    <!-- Base application theme. -->
+    <!-- アクションバーの設定の有無の記述などを行う -->
+    <style name="Base.Theme.ToolbarSample" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.ToolbarSample" parent="Base.Theme.ToolbarSample" />
+</resources>

@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Quiz</string>
+    <string name="question_label">問題文</string>
+    <string name="count_label">第%d問</string>
+    <string name="btn_answer">選択肢</string>
+
+    <!-- 結果画面 -->
+    <string name="result_title">結果</string>
+    <string name="result_score">%d問正解</string>
+    <string name="btn_try_again">もう一度</string>
+    <string name="img_desc_star">星の画像</string>
+    <string name="message_5">満点です、素晴らしい!</string>
+    <string name="message_4">とても良い結果です!</string>
+    <string name="message_3">その調子です!</string>
+    <string name="message_2">頑張りました!</string>
+    <string name="message_1">もう一度挑戦しましょう!</string>
+    <string name="message_0">何回でも挑戦できます!</string>
+
+
+
+
+</resources>

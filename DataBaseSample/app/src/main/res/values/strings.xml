@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">DataBaseSample</string>
+
+    <!-- カクテル一覧 -->
+    <string-array name="lv_cocktaillist">
+        <item>モヒート</item>
+        <item>マルガリータ</item>
+        <item>マティーニ</item>
+        <item>カイピリーニャ</item>
+        <item>ピニャコラーダ</item>
+        <item>ダイキリ</item>
+        <item>コスモポリタン</item>
+        <item>テキーラサンライズ</item>
+        <item>ジントニック</item>
+        <item>ブラックルシアン</item>
+    </string-array>
+
+    <string name="tv_lb_name">選択されたカクテル</string>
+    <string name="tv_name">未選択</string>
+    <string name="tv_lb_note">感想</string>
+    <string name="btn_save">保存</string>
+
+</resources>

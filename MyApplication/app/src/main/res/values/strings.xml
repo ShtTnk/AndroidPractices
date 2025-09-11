@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Quiz</string>
+    <string name="question_label">問題文</string>
+    <string name="count_label">第%d問</string>
+</resources>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- アクションバーのかわりにツールバーを使用する-->
+    <!--  アクションバーの取得はJavaコードで行う   -->
+    <!-- ?attr/はテーマで設定されている各種値を属性値として指定する場合に使用  -->
+    <!-- elevation属性は影を付ける為に使用する   -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_marginTop="20dp"
+        android:background="?attr/colorPrimary"
+        android:elevation="10dp" />
+
+    <!--  画面からはみ出す部分をスクロール可能にする  -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/tv_article" />
+
+    </ScrollView>
+
+</LinearLayout>
