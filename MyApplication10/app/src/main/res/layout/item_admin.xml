@@ -1,29 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Adminユーザー用リストアイテムレイアウト
+  名前・有効期限表示、削除モード時にゴミ箱アイコン表示
+-->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
     android:orientation="horizontal"
     android:padding="16dp"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:gravity="center_vertical">
 
+    <!-- ユーザー名表示 -->
     <TextView
-        android:id="@+id/txtAdminName"
+        android:id="@+id/user_name"
         android:layout_width="0dp"
-        android:layout_weight="1"
-        android:text="Admin1"
-        android:textSize="16sp"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:text="Admin Name"
+        android:textSize="18sp"
+        android:textColor="#000000" />
 
+    <!-- 設定期限表示 -->
     <TextView
-        android:id="@+id/txtAdminExpiry"
-        android:layout_width="wrap_content"
+        android:id="@+id/user_expiry"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
         android:text="2025/12/31"
         android:textSize="14sp"
-        android:layout_height="wrap_content" />
+        android:textColor="#666666"
+        android:gravity="end" />
 
+    <!-- 削除モード時に表示するゴミ箱アイコン -->
     <ImageView
         android:id="@+id/imgIcon"
         android:layout_width="24dp"
         android:layout_height="24dp"
-        android:src="@drawable/ic_launcher_background"
+        android:src="@android:drawable/ic_menu_delete"
         android:visibility="gone"
-        android:contentDescription="削除アイコン" />
+        android:layout_marginStart="8dp"/>
 </LinearLayout>

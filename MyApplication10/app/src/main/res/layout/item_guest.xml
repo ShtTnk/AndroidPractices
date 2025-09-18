@@ -1,31 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+  Guestユーザー用リストアイテム
+  名前・有効期限・削除アイコンのシンプル構造
+-->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_root"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical"
-    android:padding="12dp"
-    android:background="#BBDEFB">
+    android:orientation="horizontal"
+    android:padding="16dp"
+    android:gravity="center_vertical">
 
+    <!-- ユーザー名 -->
     <TextView
-        android:id="@+id/txtGuestName"
-        android:layout_width="wrap_content"
+        android:id="@+id/user_name"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Guest Name"
-        android:textSize="16sp"/>
+        android:layout_weight="2"
+        android:text="Guest User"
+        android:textSize="16sp"
+        android:textColor="#000000" />
 
+    <!-- 設定期限 -->
     <TextView
-        android:id="@+id/txtGuestExpiry"
-        android:layout_width="wrap_content"
+        android:id="@+id/user_expiry"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Expiry Date"
+        android:layout_weight="1"
+        android:text="2025/12/31"
         android:textSize="14sp"
-        android:layout_marginTop="4dp"/>
+        android:textColor="#666666"
+        android:gravity="end" />
 
+    <!-- 削除アイコン -->
     <ImageView
         android:id="@+id/imgIcon"
         android:layout_width="24dp"
         android:layout_height="24dp"
-        android:src="@drawable/ic_launcher_background"
+        android:src="@android:drawable/ic_menu_delete"
         android:visibility="gone"
-        android:contentDescription="削除アイコン" />
+        android:layout_marginStart="8dp"/>
 </LinearLayout>

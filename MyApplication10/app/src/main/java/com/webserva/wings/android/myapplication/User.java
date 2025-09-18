@@ -10,8 +10,8 @@ public class User {
     public static final int TYPE_GUEST = 2;
 
     private int type;
-    private String name;    // ユーザー名
-    private String expiry;  // 設定期限
+    private String name;
+    private String expiry;
 
     public User(int type, String name, String expiry) {
         this.type = type;

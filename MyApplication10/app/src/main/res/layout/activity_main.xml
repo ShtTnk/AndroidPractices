@@ -1,40 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
-    android:padding="16dp"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:padding="8dp">
 
     <!-- 削除モード切替ボタン -->
     <Button
         android:id="@+id/btnDeleteMode"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="削除モード切替"
-        android:backgroundTint="@color/design_default_color_primary_dark"
-        android:textColor="@android:color/white"
-        android:padding="12dp"
-        android:layout_marginBottom="8dp"/>
+        android:text="削除モード ON/OFF" />
 
-    <!-- 全削除ボタン（初期は非表示） -->
+    <!-- 全削除ボタン（削除モード時のみ表示） -->
     <Button
         android:id="@+id/btnDeleteAll"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="全削除"
-        android:backgroundTint="@color/material_dynamic_neutral80"
-        android:textColor="@android:color/white"
-        android:padding="12dp"
-        android:layout_marginBottom="16dp"
-        android:visibility="gone"/>
+        android:visibility="gone"
+        android:background="#FFCDD2"
+        android:textColor="#B71C1C"/>
 
-    <!-- ユーザーリスト -->
-    <ListView
-        android:id="@+id/listView"
+    <!-- ユーザー一覧 RecyclerView -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:divider="@android:color/darker_gray"
-        android:dividerHeight="1dp"/>
-
+        android:paddingTop="8dp"/>
 </LinearLayout>
