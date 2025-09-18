@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:background="#C8E6C9">
+
+    <TextView
+        android:id="@+id/txtNormalName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Normal Name"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/txtNormalExpiry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Expiry Date"
+        android:textSize="14sp"
+        android:layout_marginTop="4dp"/>
+
+    <ImageView
+        android:id="@+id/imgIcon"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/ic_launcher_background"
+        android:visibility="gone"
+        android:contentDescription="削除アイコン" />
+</LinearLayout>

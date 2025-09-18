@@ -1,0 +1,29 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/txtAdminName"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:text="Admin1"
+        android:textSize="16sp"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/txtAdminExpiry"
+        android:layout_width="wrap_content"
+        android:text="2025/12/31"
+        android:textSize="14sp"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/imgIcon"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/ic_launcher_background"
+        android:visibility="gone"
+        android:contentDescription="削除アイコン" />
+</LinearLayout>
